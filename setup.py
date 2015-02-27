@@ -17,11 +17,7 @@ setup(
     long_description=open('README.rst').read(),
     url='https://github.com/OaklandPeters/django-runscript',
     license='MIT',
-
-    packages=['runscript'],
-
-    include_package_data=True,
-
+    
     classifiers=[
         #Select one 'Development Status'
         #'Development Status :: 2 - Pre-Alpha',

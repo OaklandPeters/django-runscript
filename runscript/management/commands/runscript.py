@@ -6,8 +6,12 @@ from django.core.management.base import BaseCommand, CommandError
 
 class Command(BaseCommand):
     args = "<path>"
-    help = "My help text"
+    help = ("Runs a Python script from the command-line, "
+            "while providing the Django environment.")
 
     def handle(self, *args, **options):
 
-        print("Outputs?")
+        sys.path.append(os.getcwd())
+
+        path = args[0]
+        execfile(path)        

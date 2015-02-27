@@ -9,12 +9,14 @@ providing access to the Django environment.
 
 Code Example
 ------------
-{boilerplate}
+From a shell::
+
+    $ manage runscript path/to/my_script.py
     
 
 Installation
 ------------
-`pip install git+https://github.com/OaklandPeters/django-runscript`
+`pip install -e git+https://github.com/OaklandPeters/django-runscript#egg=django-runscript`
 
 Then add `runscript` to the `INSTALLED_APPS` of your Django settings file::
 
