@@ -14,8 +14,11 @@ Code Example
 
 Installation
 ------------
-pip install git+https://github.com/OaklandPeters/django-runscript
+`pip install git+https://github.com/OaklandPeters/django-runscript`
 
+Then add `runscript` to the `INSTALLED_APPS` of your Django settings file::
+
+    INSTALLED_APPS = INSTALLED_APPS + ('runscript', )
 
 
 Contributors
@@ -25,9 +28,6 @@ Oakland John Peters <oakland.peters@gmail.com>
 
 License
 ---------
-Available under the ``MIT license <http://opensource.org/licenses/MIT/>``_.
+Available under the ``MIT license <http://opensource.org/licenses/MIT/>`_.
 
 Copyright (c) 2014, Oakland John Peters.
-
-
-For more information on ReStructuredText (RST) formatting, see the `QuickRef <http://docutils.sourceforge.net/docs/user/rst/quickref.html/>`_ and the useful online RST editor/linter at http://rst.ninjs.org/.

@@ -1,4 +1,11 @@
-from setuptools import setup
+#!/usr/bin/env python
+
+try:
+    from setuptools import setup, find_packages
+except ImportError:
+    from ez_setup import use_setuptools
+    use_setuptools()
+    from setuptools import setup, find_packages
 
 setup(
     name='django-runscript',
@@ -11,7 +18,7 @@ setup(
     url='https://github.com/OaklandPeters/django-runscript',
     license='MIT',
 
-    packages=['django-runscript'],
+    packages=['runscript'],
 
     include_package_data=True,
 
@@ -22,7 +29,9 @@ setup(
         #'Development Status :: 4 - Beta',
         #'Development Status :: 5 - Production/Stable',
         'Development Status :: 1 - Planning',
+        'Environment :: Web Environment',
         'Framework :: Django',
+        'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Operating System :: OS Independent',
@@ -31,6 +40,5 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Software Development :: Libraries :: Python Modules',
-        'Intended Audience :: Developers',
     ]
 )
